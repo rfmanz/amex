@@ -1,3 +1,15 @@
+# !pip install kaggle 
+# !git+https://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@github.com/rfmanz/pyutils.git
+
+import kaggle
+kaggle.api.dataset_download_files('raddar/amex-data-integer-dtypes-parquet-format', path='input')
+
+kaggle.api.authenticate()
+kaggle datasets download -d raddar/amex-data-integer-dtypes-parquet-format
+
+{"username":"rafaelarevalo","key":"7a386cf3e1a111af43a837dd4094e54f"}
+    
+
 import warnings
 warnings.simplefilter('ignore')
 
