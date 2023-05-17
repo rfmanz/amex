@@ -121,7 +121,7 @@ for li, lastk in enumerate([None,3,6]):
             dfs.append(df[start:vc_[-1]])
             start = vc_[-1]
 
-        pool = ThreadPool(n_cpu)
+        pool = ThreadP  ool(n_cpu)
 
         if prefix in ['','last3_']:
             cat_feature_df = pd.concat(pool.map(cat_feature,tqdm(dfs,desc='cat_feature'))).reset_index(drop=True)
